@@ -27,27 +27,8 @@ RUN set -xe \
     npm && \
     npm install -g bower \
     argon2-dev \
-		coreutils \
-		curl-dev \
-		libedit-dev \
-		libressl-dev \
-		libsodium-dev \
-		libxml2-dev \
-		sqlite-dev \
-        autoconf \
-		dpkg-dev dpkg \
-		file \
-		g++ \
-		gcc \
-		libc-dev \
-		make \
-		pkgconf \
-		re2c \
-    ca-certificates \
-		curl \
-		tar \
-		xz \
-        libressl
+	ca-certificates 
+	
 # ensure www-data user exists
 RUN set -x \
 	&& addgroup -g 82 -S www-data \
