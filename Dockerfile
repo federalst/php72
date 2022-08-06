@@ -25,10 +25,8 @@ RUN set -xe \
     openssh \
     nodejs \
     npm && \
-    npm install -g bower \
-    argon2-dev \
-	ca-certificates 
-	
+    npm install -g bower 
+
 # ensure www-data user exists
 RUN set -x \
 	&& addgroup -g 82 -S www-data \
