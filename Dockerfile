@@ -62,7 +62,7 @@ COPY docker-php-source /usr/local/bin/
 RUN docker-php-ext-enable sodium
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/
 
-RUN docker-php-ext-enable opcache
+# RUN docker-php-ext-enable opcache
 
 #install COMPOSER
 COPY --from=composer:1.10 /usr/bin/composer /usr/bin/composer
